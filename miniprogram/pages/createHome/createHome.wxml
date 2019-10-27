@@ -1,0 +1,8 @@
+<!--miniprogram/pages/createHome/createHome.wxml-->
+
+<form bindsubmit='submitHome'>
+  <input name='content' placeholder='Write STuff...'></input>
+  <button form-type='submit' bindtap='send'>Submit</button>
+</form>
+
+<button bindtap='send'>send Email</button>

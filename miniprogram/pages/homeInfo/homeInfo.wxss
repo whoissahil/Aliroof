@@ -1,0 +1,96 @@
+/* miniprogram/pages/homeInfo/homeInfo.wxss */
+
+.bgPrimary{
+  background-color: #121212!important;
+  height: 100%;
+  width: 100%;
+}
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+.flex-wrp {
+  display: flex; 
+  flex-direction:row;
+}
+
+.flex-item{
+  padding: 5px;
+  margin: 5px;
+  
+}
+
+.page-section-title{
+  font-size: 30rpx;
+  color: #fff;
+  margin-bottom: 2rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  text-align:center;
+}
+
+.page-section-subtitle{
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  text-align:center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+
+  text-decoration: underline;
+}
+
+.page-section-content-heading{
+  font-size: 28rpx;
+  color: #fff;
+  margin-bottom: 2rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  text-align:left;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.page-section-content{
+  font-size: 25rpx;
+  color: #fff;
+  margin-bottom: 2rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  text-align:left;
+}
+.page-section-content-icon-text{
+  font-size: 30rpx;
+  color: #fff;
+  margin-bottom: 2rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  text-align:left;
+  margin-top: auto;
+
+}
+
+.page-section-content-icon{
+  font-size: 35rpx;
+  color: #fff;
+  margin-bottom: 2rpx;
+  padding-left: 30rpx;
+  padding-right: 50rpx;
+  text-align:center;
+  margin-top: auto;
+}
+
+.padMe{
+  padding-top: 30px;
+}
+
+.pad{
+  padding: 10px;
+}

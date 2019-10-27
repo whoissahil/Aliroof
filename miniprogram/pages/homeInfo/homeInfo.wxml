@@ -1,0 +1,71 @@
+<!--miniprogram/pages/homeInfo/homeInfo.wxml-->
+<view class='bgPrimary' wx:for="{{homeInfo}}">
+
+<view class="page-body">
+
+  <view class="page-section">
+    <view style="text-align:center" class="page-section-title">{{item.Title}}</view>
+    <view style="text-align:center" class="page-section-title">{{hID}}</view>
+  </view>
+
+  <view class='padMe'>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+
+  <!-- <van-row>
+    <van-col span="8">span: 8</van-col>
+    <van-col span="8">span: 8</van-col>
+    <van-col span="8">span: 8</van-col>
+  </van-row> -->
+
+  <view class='padMe'>
+    <view class='flex-wrp pad'>
+      <image style="width: 1.5em; height: 1.5em;"  src="/octicons/home/bath.png"></image>
+      <view class="page-section-content-icon">{{item.Bathrooms}}</view>
+      <image style="width: 1.5em; height: 1.5em;"  src="/octicons/home/bed.png"></image>
+      <view class="page-section-content-icon">{{item.Bedrooms}}</view>
+      <image style="width: 1.5em; height: 1.5em;"  src="/octicons/home/car.png"></image>
+      <view class="page-section-content-icon">{{item.Parking}}</view>
+        <image style="width: 1.5em; height: 1.5em;"  src="/octicons/home/type.png"></image>
+      <view class="page-section-content-icon-text">{{item.PropertyType}}</view>
+    </view>
+  </view>
+
+
+  <view class="page-section padMe">
+    <view class="page-section-subtitle">Description</view>
+    <view class="page-section-content">{{item.Description}}</view>
+    <view class='flex-wrp'>
+      <view class="page-section-content-heading">Price: </view>
+      <view class="page-section-content-heading">AED {{item.Price}}/{{item.RentPeriod}}</view>
+    </view>
+    <view class='flex-wrp'>
+      <view class="page-section-content-heading">Furnish Type: </view>
+      <view class="page-section-content-heading">{{item.FurnishType}}</view>
+    </view>
+    <view class='flex-wrp'>
+      <view class="page-section-content-heading">Size: </view>
+      <view class="page-section-content-heading">{{item.Size}} sqft</view>
+    </view>
+    <view class='flex-wrp'>
+      <view class="page-section-content-heading">Community-City: </view>
+      <view class="page-section-content-heading">{{item.Community}} - {{item.City}}</view>
+    </view>
+    <view class="page-section-subtitle">Features</view>
+    <view class="page-section-content">{{item.Features}}</view>
+    <view class="page-section-subtitle" bindtap='contactAgent'>Please contact {{item.AssignedPrivate}} for further details</view>
+
+  </view>
+
+
+</view>
+
+</view>
+

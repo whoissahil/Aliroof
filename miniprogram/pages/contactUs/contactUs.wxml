@@ -1,0 +1,31 @@
+<!--miniprogram/pages/contactUs/contactUs.wxml-->
+
+<view class='bgPrimary'>
+
+  <van-notify id="van-notify" />
+
+  <view class='header'>
+    <view class="header__bg"></view>
+    <view class="overPimgHome"><text>Contact Us</text></view>
+  </view>
+
+  <view class='padMe'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+
+      <view>
+        <l-input name="name" rules="{{userRules}}" label="Name" placeholder="Please enter your name..."  />
+        <l-input name="email" bind:linvalidate="linvalidate" label="Email" rules="{{emailRules}}" placeholder="Please enter your email..."  />
+        <l-input name="phone" bind:linvalidate="linvalidate" label="Phone" placeholder="Please enter your Phone..."  />
+        <l-textarea name="message"  placeholder="Your message..."  />
+      </view>
+
+      <view class="btn-area padMe">
+        <button class='myButton' formType="submit" >Submit</button>
+        <button class='myButton' formType="reset">Reset</button>
+      </view>
+    </form>
+  </view>
+
+  <view class='padMe'></view>
+
+</view>

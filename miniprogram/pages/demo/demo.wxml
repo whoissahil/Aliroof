@@ -1,0 +1,5 @@
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<!-- It requires to use button to authorize the login -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">Authorize to Login </button>
+<view wx:else>Please upgrade the WeChat version </view>

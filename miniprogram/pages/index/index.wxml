@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="bgPrimary">
+
+  <!-- <van-loading color="#121212" /> -->
+  <!-- <view>
+    <image class='pimgHome'></image>
+    <view class="overPimgHome"><text>Your Dream Home Is Here</text></view>
+  </view> -->
+  <view class='header'>
+    <view class="header__bg"></view>
+    <view class="overPimgHome"><text>Your Dream Home Is Here</text></view>
+  </view>
+
+  <view class='padMe'>
+    <van-tabs animated active="{{ active }}" bind:click="onClick">
+
+      <van-tab title="Sale" class="bgPrimary">
+
+        <scroll-view enable-back-to-top="true" wx:for="{{homesSale}}" >
+          <view class="padMe">
+          <navigator url="/pages/homeInfo/homeInfo?idHome={{item._id}}" hover-class="navigator-hover">
+            <l-card type="cover" 
+                bindtap="HomeInfo"
+                id="{{item._id}}" image=""
+                    title="Bedroom: {{item.Bedrooms}} Bathrooms: {{item.Bathrooms}}">
+                <view class="content" >
+                  {{item.Title}}
+                </view>
+            </l-card>
+          </navigator>
+          </view>
+        </scroll-view>
+
+      </van-tab>
+
+      <van-tab title="Rent"class="bgPrimary">
+
+        <scroll-view wx:for="{{homesRent}}">
+        <view class="padMe">
+        <navigator url="/pages/homeInfo/homeInfo?idHome={{item._id}}" hover-class="navigator-hover">
+          <l-card type="cover" 
+                bindtap="HomeInfo"
+                id="{{item._id}}" image=""
+                  title="Bedroom: {{item.Bedrooms}} Bathrooms: {{item.Bathrooms}}">
+              <view class="content">
+                {{item.Title}}
+              </view>
+          </l-card>
+          </navigator>
+        </view>
+        </scroll-view>
+      
+      </van-tab>
+    </van-tabs>
+  </view>
+
+  <!-- <view class="van-hairline--top">Demo  </view>
+  <view class="van-hairline--surround">Demo2</view> -->
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view>
+  </view>
+
+  <button bindtap='createHome'>Create new Home</button>
+
+  <!-- <scroll-view wx:for="{{homes}}">
+    <text>{{item.Title}}</text>
+  </scroll-view> -->
+
+</view>

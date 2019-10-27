@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/createHome/createHome",
+    "pages/demo/demo",
+    "pages/demo2/demo2",
+    "pages/aboutUs/aboutUs",
+    "pages/contactUs/contactUs",    
+    "pages/profile/profile",
+    "pages/homeInfo/homeInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#121212",
+    "navigationBarTitleText": "AliRoof",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#e50000",
+    "backgroundColor": "#121212",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "octicons/tab/dark/home.png",
+        "selectedIconPath": "octicons/tab/selected/home.png"
+      },
+      {
+        "pagePath": "pages/aboutUs/aboutUs",
+        "text": "About Us",
+        "iconPath": "octicons/tab/dark/aboutUs.png",
+        "selectedIconPath": "octicons/tab/selected/aboutUs.png"
+      },
+      {
+        "pagePath": "pages/contactUs/contactUs",
+        "text": "Contact Us",
+        "iconPath": "octicons/tab/dark/contactUs.png",
+        "selectedIconPath": "octicons/tab/selected/contactUs.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "Me",
+        "iconPath": "octicons/tab/dark/me.png",
+        "selectedIconPath": "octicons/tab/selected/me.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

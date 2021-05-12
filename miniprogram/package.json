@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "lin-ui": "^0.4.4",
-    "nodemailer": "^6.2.1",
+    "nodemailer": "^6.4.16",
     "vant-weapp": "^0.5.14"
   }
 }
